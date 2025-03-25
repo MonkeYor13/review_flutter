@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:review_flutter/src/screens/favorite_screen.dart';
-import 'package:review_flutter/src/screens/my_home.dart';
-import 'package:review_flutter/src/screens/profile_screen.dart';
-import 'package:review_flutter/src/screens/shopping_screen.dart';
+import '../../colors_app.dart';
+import '../../imports.dart';
 
 class HomeSecreen extends StatefulWidget {
   const HomeSecreen({super.key});
@@ -31,7 +29,7 @@ class _HomeSecreenState extends State<HomeSecreen> {
     return Scaffold(
       body: Center(child: _pages.elementAt(_paginaActual)),
       bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Colors.pink[300],
+        selectedItemColor: AppColors.textColor,
         unselectedItemColor: const Color.fromARGB(255, 199, 199, 199),
         currentIndex: _paginaActual,
         onTap: _onItemTapped,
